@@ -2,8 +2,8 @@
 title: dev-iations
 description: >
   the rants and deviations of a curious developer
-url: "http://marcosalles.github.io"
-blog_url: "/blog"
+url: http://marcosalles.github.io
+blog_url: /blog
 
 # Author settings
 name: marco salles
