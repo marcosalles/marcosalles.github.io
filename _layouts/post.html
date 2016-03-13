@@ -5,11 +5,35 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta">
+      <a href="{{ page.url }}" title="link to this post">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      </a>
+      {% if page.author %}
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+         <span itemprop="name">{{ page.author }}</span>
+       </span>
+      {% endif %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
+  <footer class="post-footer">
+    <h3 class="post-share-title">share @ </h3>
+    <ul class="post-share">
+      <li class="post-share-button">
+        <a href="https://twitter.com/share">
+          <span class="icon icon--twitter">{% include icon-twitter.svg %}</span>
+        </a>
+      </li>
+      <li class="post-share-button">
+        <a href="https://facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+          <span class="icon icon--facebook">{% include icon-facebook.svg %}</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
 </article>

@@ -252,3 +252,24 @@
         }
     }
 }
+
+.post-footer {
+  margin-bottom: $spacing-unit / 2;
+  text-align: left;
+
+  .post-share-title {
+    font-size: 15px;
+    color: #828282;
+    display: inline;
+  }
+
+  .post-share {
+    list-style: none;
+    margin-left: 0;
+    display: inline;
+
+    .post-share-button {
+      display: inline;
+    }
+  }
+}
