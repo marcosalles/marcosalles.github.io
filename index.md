@@ -1,7 +1,6 @@
 ---
-layout: page
-title: About me
-permalink: /about/
+layout: default
+permalink: /
 ---
 
 My name is Marco, but call me Szas. I am weird.
