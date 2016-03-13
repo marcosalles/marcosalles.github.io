@@ -113,6 +113,18 @@
     margin-left: 0;
 }
 
+.social-media-list {
+  .username {
+    display: inline;
+  }
+  .username--twitter:before {
+    content: '@';
+  }
+  .username--facebook:before {
+    content: '/';
+  }
+}
+
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
