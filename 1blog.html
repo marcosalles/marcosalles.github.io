@@ -13,7 +13,7 @@ permalink: /blog/
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a><span class="post-meta">{{ post.content | truncatewords: 14 }}</span>
         </h2>
       </li>
     {% endfor %}
